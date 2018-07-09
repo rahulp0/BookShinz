@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remove User</title>
+<link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+
+</head>
+<body>
+
+<br>
+<class="delete">
+
+	<form method="POST" action="{{url_for('rem1User')}}" >
+
+	<h3>Enter the customer id you want to remove:</h3>
+	<input type="value" name="c_id" required><br>
+	<input type="submit" value = "Remove_User">
+
+
+</form>
+</class="delete">
+</body>
+</html>

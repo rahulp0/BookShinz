@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A_Crud</title>
+  <link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+<script type="text/javascript">
+	function createuser()
+	{window.open("{{url_for('createUserReq')}}")}
+
+	function createbook()
+	{window.open("{{url_for('createBook')}}")}
+
+	function removeuser()
+	{window.open("{{url_for('remUser')}}")}
+
+	function removebook()
+	{window.open("{{url_for('remBookReq')}}")}
+
+
+
+</script>
+
+</head>
+<body>
+	<table  align="right" border="2px" style="background-color: rgba(3,7,1,0.5); "width="100%" border="0" cellspacing="0" cellpadding="0" >
+		<thead style="background-color:T ">welcome admin to the CRUD operations</thead>
+		<br>
+	
+		<tr><button onclick="createuser()">Create user</button></tr>
+		<tr><button onclick="createbook()">Create book</button></tr>
+		<tr><button onclick="removeuser()">Remove user</button></tr>
+
+		<tr><button onclick="removebook()">Remove book</button></tr>
+	   
+	</table>
+</body>
+</html>

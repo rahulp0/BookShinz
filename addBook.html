@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alt_B</title>
+<link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+<script type="text/javascript">
+	function cr_book()
+	{}
+	function rem_book()
+	{
+		
+	}
+</script>
+
+</head>
+	<!--<body style="background: url({{url_for('static',filename='images/joker.jpg')}}); background-size: cover;">-->	
+<body>
+<class="create" >
+<form method="POST" action="{{url_for('addBook')}}" >
+	<h3>Enter book details</h3>
+	Book id: 
+	<input type="value" name="b_id" required=""><br>
+	Book name: 
+	<input type="text" name="b_name" required=""><br>
+	Author name: 
+	<input type="text" name="author_name" required=""><br>
+	
+	Count of dem books: 
+	<input type="value" name="book_count" required=""><br>
+	<!--B_review: 
+	<input type="textarea" name="b_review"><br-->
+	Max. Retail Price/Book: 
+	<input type="value" name="price" required=""><br>
+	<button onclick="cr_book()">Create_Book</button>
+ 	
+</form>
+</class="create">
+<br>
+
+</body>
+</html>

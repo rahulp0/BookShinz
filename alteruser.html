@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>alter_U</title>
+<link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+
+</head>
+<body>
+<h3>Enter user details:</h3><br>
+<class="create" >
+<form method="POST" action="{{url_for('createUser')}}" >
+	C_id: 
+	<input type="text" name="c_id" required><br>
+	C_name: 
+	<input type="text" name="c_name" requred><br>
+	C_pword: 
+	<input type="text" name="c_pword" required><br>
+	C_purchased: 
+	<input type="value" name="c_purchased" required><br>
+	C_email: 
+	<input type="text" name="c_email" required=""><br>
+	C_category: 
+	<input type="text" name="c_cat"><br>
+	<input type="submit" value="create user">
+	<!--<button onclick="cr_user()">Create_User</button>	-->
+</form>
+</class="create">
+<br>
+<class="delete">
+
+	<form method="POST" action="{{url_for('remUser')}}" >
+
+	<h3>Enter the customer id you want to remove:</h3>
+	<input type="value" name="cus_id"><br>
+	<input type="submit" value = "Remove_User">
+
+
+</form>
+</class="delete">
+</body>
+</html>

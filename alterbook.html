@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alt_B</title>
+<link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+<script type="text/javascript">
+	function cr_book()
+	{}
+	function rem_book()
+	{
+		
+	}
+</script>
+
+</head>
+	<!--<body style="background: url({{url_for('static',filename='images/joker.jpg')}}); background-size: cover;">-->	
+<body>
+<class="create" >
+<form method="POST" action="{{url_for('Alter_B')}}" >
+	<h3>Enter book details</h3>
+	B_id: 
+	<input type="value" name="b_id"><br>
+	B_name: 
+	<input type="text" name="b_name"><br>
+	B_author: 
+	<input type="text" name="b_author"><br>
+	B_rating: 
+	<input type="value" name="b_rating"><br>
+	B_count: 
+	<input type="value" name="b_count"><br>
+	B_review: 
+	<input type="textarea" name="b_review"><br>
+	B_price: 
+	<input type="value" name="b_cost"><br>
+	<button onclick="cr_book()">Create_Book</button>
+ 	
+</form>
+</class="create">
+<br>
+<class="delete">
+<form method="POST" action="{{url_for('Alter_B')}}">
+	<h3>Enter the book id you want to remove:</h3><br>
+	Enter id:
+	<input type="value" name="b_id"><br>
+	<button onclick="rem_book()">Remove_Book</button>
+
+
+
+
+
+
+
+	
+</form>
+</class="delete">
+</body>
+</html>

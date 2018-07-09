@@ -1,0 +1,24 @@
+<! doctype html>
+<html>
+<head>
+	<!--metatags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="background: url({{url_for('static',filename='images/41.jpg')}}); background-size: 100% 100%;">	
+<link href="{{url_for( 'static',filename='css/bootstrap.min.css')}}" rel="stylesheet" media="screen">
+<link href={{url_for( 'static',filename='js/bootstrap.min.js')}}" rel="stylesheet" media="screen">
+
+<h1 style="border:3px solid Tomato; background-color: #fd23">
+  <div align="right">
+  <font style="color: rgba(321,221,45,0.6);">Login As:</font>
+  <a href="admin.html" target="_blank"> <button style="color: blue" type="button" value="admin" onclick="alert('you pressed admin')">Admin</button></a>
+  <a href="keeper.html" target="_blank"><button style="color: rgb(13,05,73);"type="button" value="keeper" onclick="alert('you pressed Store Keeper')">Store-Keeper</button></a>
+  <a href="user.html" target="_blank"><button style="color: rgb(02,77,08);"type="button" value="user" onclick="alert('you pressed Customer')">User</button></a>
+  </div>
+</h1>
+
+
+</body>
+</html>
